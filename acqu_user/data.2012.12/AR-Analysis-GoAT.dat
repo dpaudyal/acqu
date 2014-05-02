@@ -28,7 +28,7 @@ Use-CaLib-PID:      1       0       0       1
 Use-CaLib-Veto:     0       1
 
 #Use-CaLib-CBEnergyPerRun: 	data/CBEnergyCorrectionPerRun.txt
-RootTree-Output-Folder:         ~/
+RootTree-Output-Folder:         /home/dpaudyal/output
 RootTree-File-Name:		Acqu
 
 Initialise:
