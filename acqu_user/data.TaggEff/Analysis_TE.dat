@@ -29,7 +29,8 @@ MultiADC:       3       1401    1911    1400
 ## Apparatus setup....
 ## Raw analysis may be performed without Apparati
 ##              Name            Class           	Setup file
-Apparatus:      TAGG            TA2Tagger   		Tagger_883.TE.dat
+#Apparatus:      TAGG            TA2Tagger   		Tagger_883.TE.dat
+Apparatus:	 TAGG            TA2Tagger	        Apparatus-Tagger.dat
 ##
 ## Turn on apparatus-level reconstruction
 ##Reconstruct-Analysis:

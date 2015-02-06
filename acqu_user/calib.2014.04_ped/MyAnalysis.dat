@@ -1,0 +1,64 @@
+#########################################################################
+#                                                                       #
+# Physics analysis class configuration file                             #
+#                                                                       #
+#########################################################################
+
+
+Reconstruct:
+
+#
+# CaLib configuration
+#
+
+# General:      dbhost       dbname   dbuser      dbpass        calibration
+#Use-CaLib:      phys-jaguar  calib    acqu_ro     basel_read    LD2_Domi
+# miscellaneous calibrations    # target position  (0=off/1=on)
+#Use-CaLib-Misc:                 1
+# tagger calib:     time  (0=off/1=on)
+#Use-CaLib-TAGG:     1
+# CB calib:         energy  time    timewalk    quadr. energy  (0=off/1=on)
+#Use-CaLib-CB:       1       1       1           1
+# TAPS calib:       energy  time    quadr. energy   LED thr.  (0=off/1=on)
+#Use-CaLib-TAPS:     0       0       0               1
+# PID calib:        phi     droop   energy  time  (0=off/1=on)
+#Use-CaLib-PID:      0       0       0       1
+# Veto calib:       energy  time  (0=off/1=on)
+#Use-CaLib-Veto:     1       1
+
+
+#
+# software trigger configuration
+#
+
+# total multiplicity
+Trigger-Total-Mult: 2
+
+# TAPS alone multiplicity
+Trigger-TAPS-Mult: 9999
+
+# CB thresholds: total CB sum / CB segment sum
+Trigger-CB-Thresholds: 300 20
+
+# TAPS LED1 thresholds
+Trigger-TAPS-LED1-Threshold: 40
+
+# TAPS LED2 thresholds
+Trigger-TAPS-LED2-Threshold: 40
+
+# global time shits
+CB-Time-Offset: 0.56645
+TAPS-Time-Offset: -4.104794
+
+# Bad tagger channels
+Bad-Tagger-Channels: $CALIB_DATA/Sep2010/tagg_bad
+
+# P2/Tagger ratio output
+#
+#P2-Tagger-Ratio:
+
+# save event if the SaveEvent variable is 1
+#Data-Cut: 1D    SaveEvent   AND data  1 1
+
+Initialise:
+

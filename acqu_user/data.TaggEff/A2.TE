@@ -26,7 +26,7 @@
 ## NB with TAPS the number of ADCs = 29001
 ##
 ## Batch mode operation...redirect output directory for log files etc.
-BatchDir: logfiles/
+BatchDir: /home/dpaudyal/acqu/acqu_user/
 ##
 ##        Tree Name     	# branches	Process Type
 Name:     RawEvent_AR_Save	3		Raw
@@ -42,8 +42,11 @@ Branch:	  Mk1_Header            120000
 Analysis: TA2UserAnalysis
 ##
 ## Analysis setup file
-AnalysisSetup: Analysis_TE.dat
+#AnalysisSetup: Analysis_TE.dat
+AnalysisSetup: Analysis-TaggEff.dat
+
+
 ##
 ##
 ## Files to Analyse
-ServerSetup: TaggEff_files.dat
+ServerSetup: data/TaggEff_files.dat

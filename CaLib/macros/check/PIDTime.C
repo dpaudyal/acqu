@@ -60,7 +60,7 @@ void PIDTime()
     Char_t tmp[256];
     
     // load CaLib
-    gSystem->Load("libCaLib.so");
+    gSystem->Load("/home/dpaudyal/acqu/build/lib/libCaLib.so");
     
     // general configuration
     const Char_t* data = "Data.PID.T0";
@@ -71,8 +71,8 @@ void PIDTime()
     //const Char_t filePat[] = "/usr/puma_scratch0/werthm/A2/Dec_07/AR/out/ARHistograms_CB_RUN.root";
 
     // configuration (February 2009)
-    const Char_t calibration[] = "LD2_Feb_09";
-    const Char_t filePat[] = "/usr/puma_scratch0/werthm/A2/Feb_09/AR/out/ARHistograms_CB_RUN.root";
+    const Char_t calibration[] = "2014_04_Compton_Paudyal";
+    const Char_t filePat[] = "/home/dpaudyal/CaLiboutput/2014_07_21/ARHistograms_CBTaggTAPS_RUN.root";
     
     // configuration (May 2009)
     //const Char_t calibration[] = "LD2_May_09";

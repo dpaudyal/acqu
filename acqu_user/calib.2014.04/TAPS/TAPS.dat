@@ -1,0 +1,28 @@
+##-----------------------------------------------------------------------
+##--Author	JRM Annand   29th Apr 2003
+##--Update	R Gregor...
+##--Description
+##                *** Acqu++ <-> Root ***
+## Online/Offline Analysis of Sub-Atomic Physics Experimental Data 
+##
+## Parameter File: TAPS.dat (specified in CBanalysis.dat)
+## Setup analysis of the TA2Calorimeter (TAPS) apparatus class
+## This one sets up an analysis of the forward-wall BaF2 array
+## Vetos handled in BaF2 class
+##----------------------------------------------------------------------------
+##
+## Specify list of detectors which constitute the TAPS apparatus
+##	  Name         Class Name		Setup file
+Detector: BaF2PWO       TA2MyTAPS_BaF2PWO	data/TAPS/BaF2_PWO.dat
+Detector: VETO          TA2PlasticVETO          data/TAPS/Veto.dat
+##
+## Data reconstruction method for Crystal Ball 
+Reconstruct:
+##
+## PDG database	# particles
+ParticleID: 	16
+## Do some post-initialisation.
+## Should usually be done before display is setup
+Initialise:
+##
+## End

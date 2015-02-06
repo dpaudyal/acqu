@@ -1161,6 +1161,7 @@ void TA2MyCaLib::ReconstructPhysics()
     
     if (fCalib_Tagger_Time)
     {
+
         // tagger loop
         for (UInt_t i = 0; i < fTaggerPhotonNhits; i++)
         {
@@ -1185,6 +1186,7 @@ void TA2MyCaLib::ReconstructPhysics()
             }
 
 	    fHCalib_Tagger_Time_Ind->Fill(tagg_time, tagg_element);
+
 
         }
     }

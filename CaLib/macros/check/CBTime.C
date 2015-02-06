@@ -60,7 +60,8 @@ void CBTime()
     Char_t tmp[256];
     
     // load CaLib
-    gSystem->Load("libCaLib.so");
+   // gSystem->Load("libCaLib.so");
+ gSystem->Load("/home/dpaudyal/acqu/build/lib/libCaLib.so");
     
     // general configuration
     const Char_t* data = "Data.CB.T0";
@@ -77,9 +78,8 @@ void CBTime()
     //const Char_t filePat[] = "/Users/fulgur/Desktop/calib/Feb_09/ARHistograms_CB_RUN.root";
     
     // configuration (May 2009)
-    const Char_t calibration[] = "LD2_May_09";
-    //const Char_t filePat[] = "/usr/puma_scratch0/werthm/A2/May_09/AR/out/ARHistograms_CB_RUN.root";
-    const Char_t filePat[] = "/Users/fulgur/Desktop/calib/May_09/ARHistograms_CB_RUN.root";
+    const Char_t calibration[] = "2014_04_Compton_Paudyal";
+    const Char_t filePat[] = "/home/dpaudyal/CaLiboutput/2014_07_22/ARHistograms_CBTaggTAPS_RUN.root";
     
     // get number of sets
     Int_t nSets = TCMySQLManager::GetManager()->GetNsets(data, calibration);

@@ -1,0 +1,2 @@
+Error in operation <ERROR ARFile_t: fopen failed, FileName: ./data/AR.dat> of class TAcquRoot at command line:
+./data/AR.dat FATAL ERROR...exiting AcquRoot

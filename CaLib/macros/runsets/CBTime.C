@@ -17,7 +17,7 @@ TCanvas* gCFit;
 TH1* gHOverview;
 TH1* gH;
 TH2* gH2;
-TFile* gFile;
+TFile* ggFile;
 TF1* gFitFunc;
 TLine* gLine;
 
@@ -80,7 +80,8 @@ void CBTime()
     Char_t tmp[256];
     
     // load CaLib
-    gSystem->Load("libCaLib.so");
+     gSystem->Load("libCaLib.so");
+//gSystem->Load("/home/dpaudyal/acqu/build/lib/libCaLib.so");
     
     // general configuration
     Bool_t watch = kFALSE;
@@ -90,8 +91,8 @@ void CBTime()
     Double_t yMax = 20;
 
     // configuration (December 2007)
-    const Char_t calibration[] = "LD2_Dec_07";
-    const Char_t* fLoc = "/usr/puma_scratch0/werthm/A2/Dec_07/AR/out";
+    const Char_t calibration[] = "2014_04_Compton_Paudyal";
+    const Char_t* fLoc = "/home/dpaudyal/CaLiboutput/2014_07_22";
 
     // configuration (February 2009)
     //const Char_t calibration[] = "LD2_Feb_09";
@@ -144,14 +145,14 @@ void CBTime()
             // clean-up
             if (gH) delete gH;
             if (gH2) delete gH2;
-            if (gFile) delete gFile;
+            if (ggFile) delete ggFile;
             gH = 0;
             gH2 = 0;
-            gFile = 0;
+            ggFile = 0;
 
             // load ROOT file
-            sprintf(tmp, "%s/ARHistograms_CB_%d.root", fLoc, runs[j]);
-            gFile = new TFile(tmp);
+            sprintf(tmp, "%s/ARHistograms_CBTaggTAPS_%d.root", fLoc, runs[j]);
+           ggFile = new TFile(tmp);
 
             // check file
             if (!gFile) continue;
@@ -206,6 +207,6 @@ void CBTime()
 
     printf("%d runs analyzed.\n", nTotRuns);
 
-    gSystem->Exit(0);
+    // gSystem->Exit(0);
 }
 

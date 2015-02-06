@@ -45,7 +45,7 @@ Branch:   emwpc         1024
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #ROOT file(s) (GEANT4 output) to be analysed. Add more lines for more files
 #
-TreeFile: $HOME/Geant4/A2/out/acquMC/Compton_g4_out.root
+TreeFile: /home/dpaudyal/geant4/A2/out/EventGen/Emax_240_Emin_120_hist_ntpl.root
 #TreeFile: $HOME/Geant4/A2/out/acquMC/Pi0_g4_out.root
 #TreeFile: $HOME/Geant4/A2/out/acquMC/PiPlusN_g4_out.root
 #
@@ -54,7 +54,7 @@ TreeFile: $HOME/Geant4/A2/out/acquMC/Compton_g4_out.root
 #
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #Directory to save any created ROOT files (include final '/')
-Directory:  $acqu/
+Directory:  /home/dpaudyal/acqu/acqu_user/
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
